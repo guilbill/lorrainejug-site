@@ -1,0 +1,62 @@
+---
+layout: default
+title: Nos speakers
+---
+
+<div id="status">
+    <h1>Nos Speakers</h1>
+    <p>
+        <strong>Ils sont venus en lorraine pour nous faire profiter de leur savoir lors d'une ou parfois plusieurs soirées.
+            Ils ont fait du LorraineJug ce qu'il est et le LorraineJug les en remercie.</strong>
+    </p>
+
+    {% for speakerMap in site.data.speakers reversed %}
+        {% capture odd_even %}
+            {% cycle 'odd', 'even' %}
+        {% endcapture %}
+
+        {% assign speaker = speakerMap[1] %}
+
+        <div class="speaker {{odd_even}}" id="{{ speakerMap[0] }}">
+            <div class="name">
+                {{ speaker.firstname }} {{ speaker.lastname }}
+            </div>
+
+            {% if speaker.gravatar %}
+            <div class="photo"><img src="http://www.gravatar.com/avatar/{{ speaker.gravatar }}?s=150"  /></div>
+            {% elsif speaker.photo %}
+                <div class="photo"><img src="{{ site.baseurl }}/images/speakers/{{ speaker.photo }}"  /></div>
+            {% endif %}
+
+            {% if speaker.social %}
+                <ul class="sociallinks">
+                {% if speaker.social.twitter %}
+                   <li><a href="http://www.twitter.com/{{ speaker.social.twitter }}" rel="external"><img
+                            src="{{ site.baseurl }}/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                {% endif %}
+                {% if speaker.social.linkedin %}
+                    <li><a href="http://fr.linkedin.com/in/{{ speaker.social.linkedin }}" rel="external"><img
+                            src="{{ site.baseurl }}/images/icones/linkedin_icon_47x47.png" title="Linkedin" height="47"
+                            width="47"/></a></li>
+                {% endif %}
+                {% if speaker.social.github %}
+                    <li><a href="http://github.com/{{ speaker.social.github }}" rel="external"><img
+                            src="{{ site.baseurl }}/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                {% endif %}
+                {% if speaker.social.homepage %}
+                    <li><a href="{{ speaker.social.homepage }}" rel="external"><img
+                            src="{{ site.baseurl }}/images/icones/rss_icon_47x47.png" title="Site Perso" height="47" width="47"/></a></li>
+                {% endif %}
+                </ul>
+            {% endif %}
+
+            <div class="bio">
+                {% if speaker.bio %}
+                    {{ speaker.bio }}
+                {% else %}
+                    Bio à venir ...
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+</div>
