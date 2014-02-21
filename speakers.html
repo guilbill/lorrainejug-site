@@ -1,62 +1,1276 @@
----
-layout: default
-title: Nos speakers
----
-
-<div id="status">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nos speakers - LorraineJug</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="ROBOTS" content="INDEX, FOLLOW" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" type="image/png" href="/lorrainejug-site/images/logo_91x91.png" />
+        <link rel="alternate" type="application/rss+xml" title="LorraineJug" href="http://www.lorrainejug.org/feed.xml" />
+        <link rel="stylesheet" href="/lorrainejug-site/css/main.css">
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="/lorrainejug-site/js/main.js"></script>
+    </head>
+    <body>
+        <header>
+    <div class="container">
+        <a href="/lorrainejug-site/"><img src="/lorrainejug-site/images/logo_434x147.png" alt="LorraineJug"
+                                           width="434" height="147"/></a>
+        <nav>
+            <ul>
+                <li><a href="/lorrainejug-site/">Actualité</a></li>
+                <li><a href="/lorrainejug-site/events/">Soirées</a></li>
+                <li><a href="/lorrainejug-site/speakers.html">Speakers</a></li>
+                <li><a href="/lorrainejug-site/sponsors.html">Sponsors</a></li>
+                <li><a href="/lorrainejug-site/contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+        <div id="site">
+            <div id="main"><div id="status">
     <h1>Nos Speakers</h1>
     <p>
         <strong>Ils sont venus en lorraine pour nous faire profiter de leur savoir lors d'une ou parfois plusieurs soirées.
             Ils ont fait du LorraineJug ce qu'il est et le LorraineJug les en remercie.</strong>
     </p>
 
-    {% for speakerMap in site.data.speakers reversed %}
-        {% capture odd_even %}
-            {% cycle 'odd', 'even' %}
-        {% endcapture %}
+    
+        
 
-        {% assign speaker = speakerMap[1] %}
+        
 
-        <div class="speaker {{odd_even}}" id="{{ speakerMap[0] }}">
+        <div class="speaker 
+            odd
+        " id="aardhuin">
             <div class="name">
-                {{ speaker.firstname }} {{ speaker.lastname }}
+                Alexandre ARDHUIN
             </div>
 
-            {% if speaker.gravatar %}
-            <div class="photo"><img src="http://www.gravatar.com/avatar/{{ speaker.gravatar }}?s=150"  /></div>
-            {% elsif speaker.photo %}
-                <div class="photo"><img src="{{ site.baseurl }}/images/speakers/{{ speaker.photo }}"  /></div>
-            {% endif %}
+            
+            <div class="photo"><img src="http://www.gravatar.com/avatar/198449a7e196c4b0f2ed25f65279bf84?s=150"  /></div>
+            
 
-            {% if speaker.social %}
+            
                 <ul class="sociallinks">
-                {% if speaker.social.twitter %}
-                   <li><a href="http://www.twitter.com/{{ speaker.social.twitter }}" rel="external"><img
-                            src="{{ site.baseurl }}/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
-                {% endif %}
-                {% if speaker.social.linkedin %}
-                    <li><a href="http://fr.linkedin.com/in/{{ speaker.social.linkedin }}" rel="external"><img
-                            src="{{ site.baseurl }}/images/icones/linkedin_icon_47x47.png" title="Linkedin" height="47"
-                            width="47"/></a></li>
-                {% endif %}
-                {% if speaker.social.github %}
-                    <li><a href="http://github.com/{{ speaker.social.github }}" rel="external"><img
-                            src="{{ site.baseurl }}/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
-                {% endif %}
-                {% if speaker.social.homepage %}
-                    <li><a href="{{ speaker.social.homepage }}" rel="external"><img
-                            src="{{ site.baseurl }}/images/icones/rss_icon_47x47.png" title="Site Perso" height="47" width="47"/></a></li>
-                {% endif %}
+                
+                   <li><a href="http://www.twitter.com/a14n" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/a14n" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
                 </ul>
-            {% endif %}
+            
 
             <div class="bio">
-                {% if speaker.bio %}
-                    {{ speaker.bio }}
-                {% else %}
+                
                     Bio à venir ...
-                {% endif %}
+                
             </div>
         </div>
-    {% endfor %}
-</div>
+    
+        
+
+        
+
+        <div class="speaker 
+            even
+        " id="ddelabassee">
+            <div class="name">
+                David DELABASSEE
+            </div>
+
+            
+            <div class="photo"><img src="http://www.gravatar.com/avatar/9999629551902f546d4817c9840bb9f6?s=150"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/delabassee" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/delabassee" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    <p>David Delabassee is a Principal Consultant at Oracle Belgium. Prior to that, he spent the last 10 years at Sun Microsystems focusing on Java end-to-end (from the smart card to the high end server), all the related technologies, and the developer tools. He has been involved in Java projects since the early days of this technology. David is a steering member of Devoxx, Europe largest Java conference.</p>‎
+
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            odd
+        " id="dpilato">
+            <div class="name">
+                David PILATO
+            </div>
+
+            
+            <div class="photo"><img src="http://www.gravatar.com/avatar/20049a614b7f6838dc87b4bc39c42079?s=150"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/dadoonet" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/dadoonet" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            even
+        " id="tgrall‎">
+            <div class="name">
+                Tugdual GRALL
+            </div>
+
+            
+            <div class="photo"><img src="http://www.gravatar.com/avatar/aab9ac774f61c5d9bf143b5a1bfe901b?s=150"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/tgrall‎" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/tgrall‎" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            odd
+        " id="fvaille">
+            <div class="name">
+                François VAILLE
+            </div>
+
+            
+
+            
+                <ul class="sociallinks">
+                
+                
+                    <li><a href="http://fr.linkedin.com/in/fvaille" rel="external"><img
+                            src="/lorrainejug-site/images/icones/linkedin_icon_47x47.png" title="Linkedin" height="47"
+                            width="47"/></a></li>
+                
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            even
+        " id="gscheibel">
+            <div class="name">
+                Guillaume SCHEIBEL
+            </div>
+
+            
+            <div class="photo"><img src="http://www.gravatar.com/avatar/0d82c7c12dbc0a5f96e098d3e13b16c3?s=150"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/g_scheibel‎" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/g_scheibel‎" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            odd
+        " id="sletelie">
+            <div class="name">
+                Sébastien LETELIE
+            </div>
+
+            
+            <div class="photo"><img src="http://www.gravatar.com/avatar/7b9c109b029433c9f5b79250e8e349de?s=150"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/sebmade‎" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/sebmade" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            even
+        " id="lprecup‎">
+            <div class="name">
+                Lucian PRECUP
+            </div>
+
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/lucianprecup‎" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            odd
+        " id="tleriche‎">
+            <div class="name">
+                Thierry LERICHE
+            </div>
+
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/thierryleriche‎" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                
+                    <li><a href="http://www.icauda.com/" rel="external"><img
+                            src="/lorrainejug-site/images/icones/rss_icon_47x47.png" title="Site Perso" height="47" width="47"/></a></li>
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            even
+        " id="jpaumard">
+            <div class="name">
+                José PAUMARD
+            </div>
+
+            
+            <div class="photo"><img src="http://www.gravatar.com/avatar/f784a8de872a5d98f67ac5ccbd6683d0?s=150"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/JosePaumard" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/JosePaumard" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    <p>José est maître de conférences à l'institut Galilée (université Paris 13) et docteur en mathématiques appliquées de l'ENS de Cachan. Il découvre Java en 1995, et enseigne le langage et ses API depuis 2000 en DESS (devenu M2 depuis). Il y a 10 ans, José rencontre <a href="http://www.college-de-france.fr/site/pierre-briant/">Pierre Briant</a> et se passionne depuis pour les bases de données historiques et archéologiques. Il codirige dans ce cadre le <a href="http://www.museum-achemenet.college-de-france.fr/">projet MAVI</a> en collaboration avec le collège de France, et publie en open source <a href="http://www.openmelodie.org/">Open melodie</a> plateforme Java qui joue le rôle de back-office du MAVI. Il tient le blog <a href="http://blog.paumard.org/">Java le soir</a>, qui propose plus de 650 pages de cours Java / JEE en accès libre. Enfin, José apporte régulièrement son concours à de lastnamebreux projets techniques dans des domaines très divers.‎</p>
+
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            odd
+        " id="wtrombini">
+            <div class="name">
+                Wilfried TROMBINI
+            </div>
+
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/wiltro2‎" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            even
+        " id="asabotdurand">
+            <div class="name">
+                Antoine SABOT-DURAND
+            </div>
+
+            
+            <div class="photo"><img src="http://www.gravatar.com/avatar/98d0697142b0d75568acf12b2767b01c?s=150"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/antoine_sd‎" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/antoinesd‎" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            odd
+        " id="rmaton">
+            <div class="name">
+                Romain MATON
+            </div>
+
+            
+            <div class="photo"><img src="http://www.gravatar.com/avatar/ce157969821355897cb6c971c1a9ee71?s=150"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/rmat0n" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/rmat0n" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
+                    <li><a href="http://www.web-tambouille.fr" rel="external"><img
+                            src="/lorrainejug-site/images/icones/rss_icon_47x47.png" title="Site Perso" height="47" width="47"/></a></li>
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    <p>Après plusieurs années passées chez Improve Technologies et Xebia, Romain Maton est aujourd'hui consultant indépendant. Mission après mission, il s’est forgé une solide expérience en développement Web et logiciel. Il dispose ainsi d'une très large compétence sur l'ensemble de l'écosystème JEE, que ce soit sur les bonnes pratiques d'architecture, sur les frameworks de développement ou sur les interfaces client riches.</p> <p>Inconditionnel du pair programming, c'est un fervent disciple des méthodes Agiles. Romain est intervenu dans différents JUG de France (Paris, Rennes, Tours, Nancy, Bordeaux…) et conférences (JUG Summer Camp, Soft-Shake, RivieraDev…) sur des sujets tels que Scala, Node ou bien encore l'optimisation de sites Web mobiles.</p> <p>Il est aussi le créateur de web-tambouille.fr dans lequel il traite de sujets tels que Java, Node, HTML5, Javascript, Programmation Fonctionnelle, Android et bien d'autres !‎</p>
+
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            even
+        " id="frenout‎">
+            <div class="name">
+                Frédéric RENOUT
+            </div>
+
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/fred_renout‎" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            odd
+        " id="jmdoudoux">
+            <div class="name">
+                Jean-Michel DOUDOUX
+            </div>
+
+            
+                <div class="photo"><img src="/lorrainejug-site/images/speakers/jmdoudoux.jpg"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/jmdoudoux" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                
+                    <li><a href="http://www.jmdoudoux.fr" rel="external"><img
+                            src="/lorrainejug-site/images/icones/rss_icon_47x47.png" title="Site Perso" height="47" width="47"/></a></li>
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    <p>Passionné par le développement de logiciels depuis son adolescence et par la veille technologique, Jean-Michel possède une longue expérience, en SSII et personnelle, dans l'écriture d'applications avec différents langages.</p> <p>Utilisant Java depuis sa version 1.0, il aime partager sa passion notamment en se consacrant, depuis plus d'une douzaine d'années, à la rédaction de deux didacticiels, intitulés <a href="http://www.jmdoudoux.fr">Développons en Java</a>, diffusés sous licence GNU FDL. Il est également le co-fondateur du Lorraine JUG et membre de YaJUG.</p>
+
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            even
+        " id="xroy">
+            <div class="name">
+                Xavier ROY
+            </div>
+
+            
+                <div class="photo"><img src="/lorrainejug-site/images/speakers/xroy.jpg"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/xavroy" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            odd
+        " id="mfiguiere‎">
+            <div class="name">
+                Michael FIGUIERE
+            </div>
+
+            
+            <div class="photo"><img src="http://www.gravatar.com/avatar/63b37ec39d27ee1b4e29c29e45aa99b6?s=150"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/mfiguiere‎" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/mfiguiere‎" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            even
+        " id="apupier‎">
+            <div class="name">
+                Aurélien PUPIER
+            </div>
+
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/apupier‎" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            odd
+        " id="aheritier">
+            <div class="name">
+                Arnaud HERITIER
+            </div>
+
+            
+            <div class="photo"><img src="http://www.gravatar.com/avatar/9dec3dd95fe76a6719fae939b368d1a5?s=150"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/aheritier" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/aheritier" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    <p>Arnaud est responsable de l'usine logicielle chez l'éditeur eXoPlatform. Ancien consultant d'OCTO Technology, speaker reconnu, il participe à différents projets open-source comme Jenkins ou Apache Maven. Il est aussi le co-auteur du livre "Apache Maven" co-écrit avec Nicolas De loof.</p>‎
+
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            even
+        " id="gbort">
+            <div class="name">
+                Guillaume BORT
+            </div>
+
+            
+            <div class="photo"><img src="http://www.gravatar.com/avatar/adcd749d588278dbd255068c1d4b20d3?s=150"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/guillaumebort" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/guillaumebort" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    <p>Guillaume Bort est co-fondateur de Zenexity, cabinet spécialisé dans les architectures orientées Web. Ancien expert J2EE il a travaillé plusieurs années à mettre au point des frameworks Web pour de grand comptes, avant de profiter de son expérience pour créer Play framework en se focalisant sur les aspects de productivité et de simplicité pour les développeurs. Il est toujours "Lead Developer" du projet Play.</p>‎
+
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            odd
+        " id="amoussinepouchkine">
+            <div class="name">
+                Alexis MOUSSINE-POUCHKINE
+            </div>
+
+            
+            <div class="photo"><img src="http://www.gravatar.com/avatar/aafd9d928b31528176eeb940f671bf96?s=150"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/alexismp" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/alexismp" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    <p>Ambassadeur Java EE et GlassFish chez Oracle</p>‎
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            even
+        " id="agoncalves">
+            <div class="name">
+                Antonio GONCALVES
+            </div>
+
+            
+            <div class="photo"><img src="http://www.gravatar.com/avatar/1fc6aa04011b2f0f9721df913b0fd415?s=150"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/agoncal" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/agoncal" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    <p>Antonio is a senior software architect specialized in Java/Java EE. As a consultant he advises customers in France and help them in defining their software architecture. Antonio is also the founder of the very successful Paris JUG and independent JCP member on JEE6 (JSR 316), JPA 2.0 (JSR 317) and EJB 3.1 (JSR 318). Based on all his experiences, he has written two books about Java EE 5 and recently on Java EE 6 with Glassfish. It explains, in a practical way, how to develop an application using most of the Java EE specifications.</p>‎
+
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            odd
+        " id="lgangloff‎">
+            <div class="name">
+                Loïc GANGLOFF
+            </div>
+
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/loicgangloff‎" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            even
+        " id="nromanetti">
+            <div class="name">
+                Nicolas ROMANETTI
+            </div>
+
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/nromanetti" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/nromanetti" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    <p>Nicolas a plus de 13 années d'expérience dans le développement logiciel et la conduite de projets informatiques. Il a passé 5 années aux Etats-Unis dans la Silicon Valley où il a travaillé pour deux éditeurs de logiciels.</p> <p>A son retour en France, il a travaillé en tant que consultant indépendant avant de co-fonder la société Jaxio et le service springfuse.com. Nicolas est diplomé de Télécom Paris.‎</p>
+
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            odd
+        " id="ogerardin‎">
+            <div class="name">
+                Olivier GERARDIN
+            </div>
+
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/ogerardin‎" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            even
+        " id="dgirard">
+            <div class="name">
+                Didier GIRARD
+            </div>
+
+            
+            <div class="photo"><img src="http://www.gravatar.com/avatar/ece9780c444d2306259572b997aca0ef?s=150"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/DidierGirard" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/dgirard" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    <p>Directeur des Operations et de L'innovation chez SFEIR, Didier Girard est Docteur en Informatique de l'ENS Lyon. Il aime acquérir des connaissances et les partager. Toujours à la recherche de technologies qui va s'imposer sur le marché dans les années à venir. Il travaille sur des projets mettant en oeuvre le Cloud Computing depuis 2008.</p>‎
+
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            odd
+        " id="gcuisinier">
+            <div class="name">
+                Gildas CUISINIER
+            </div>
+
+            
+            <div class="photo"><img src="http://www.gravatar.com/avatar/de6689ce4dd5e330b38e55af0f1b5c6b?s=150"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/gcuisinier" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/gcuisinier" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    <p>Gildas Cuisinier, consultant au Luxembourg, est connu pour son activité pour la communauté Spring francophone. Il est à l'origine de la section Spring de Developpez.com laquelle comprend forum, blog, cours, articles techniques, interview et FAQ.</p> <p>Il a également participé à la relecture de plusieurs ouvrages sur Spring (Spring par la pratique et Spring Dynamic Modules in Action) et s'est engagé dans l'évangélisation de Spring 3.0 par le biais de conférences dans plusieurs JUG en France et au Luxembourg. Il a également apporté la base du support de XMPP/Jabber de Spring WebServices.</p> <p>En dehors du monde Spring, il a également collaborer avec Henri Gomez pour fournir un packaging d'OpenJDK pour Mac OS X.</p>‎
+
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            even
+        " id="sstormacq">
+            <div class="name">
+                Sébastien STORMACQ
+            </div>
+
+            
+            <div class="photo"><img src="http://www.gravatar.com/avatar/8d913eec72e7837bb2712a06ea5f25c5?s=150"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/sebsto‎" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/sebsto" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            odd
+        " id="sritter">
+            <div class="name">
+                Simon RITTER
+            </div>
+
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/speakjava" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    <p>Simon Ritter is a Java Technology Evangelist at Sun Microsystems. Simon has been in the IT business since 1984 and holds a Bachelor of Science degree in Physics from Brunel University in the U.K. Originally working in the area of UNIX development for AT&T UNIX System Labs and then Novell, Simon moved to Sun in 1996. At this time he started working with Java technology and has spent time working both in Java technology development and consultancy. He now specialises in looking at emerging technologies including cloud computing, wireless sensor networks and gestural user interfaces.</p>
+
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            even
+        " id="fdewasmes">
+            <div class="name">
+                Fabrice DEWASMES
+            </div>
+
+            
+
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            odd
+        " id="bschaff">
+            <div class="name">
+                Benjamin SCHAFF
+            </div>
+
+            
+
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            even
+        " id="msaheb">
+            <div class="name">
+                Malik SAHEB
+            </div>
+
+            
+
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+        
+
+        
+
+        <div class="speaker 
+            odd
+        " id="theute">
+            <div class="name">
+                Thomas HEUTE
+            </div>
+
+            
+            <div class="photo"><img src="http://www.gravatar.com/avatar/72b54135c38f6cd09c918700eaf2a58e?s=150"  /></div>
+            
+
+            
+                <ul class="sociallinks">
+                
+                   <li><a href="http://www.twitter.com/theute" rel="external"><img
+                            src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47" width="47"/></a></li>
+                
+                
+                
+                    <li><a href="http://github.com/theute" rel="external"><img
+                            src="/lorrainejug-site/images/icones/github_icon_47x47.png" title="Github" height="47" width="47"/></a></li>
+                
+                
+                </ul>
+            
+
+            <div class="bio">
+                
+                    Bio à venir ...
+                
+            </div>
+        </div>
+    
+</div></div>
+            <aside>
+    <h1>Partenaires Gold</h1>
+    <ul>
+        <li><a href="http://www.sfeir.com/" rel="external"><img
+                src="/lorrainejug-site/images/sponsors/logo_sfeir.png" title="Sfeir" height="68" width="180"
+                /></a></li>
+
+        <li><a href="http://www.telecomnancy.eu/" rel="external"><img
+                src="/lorrainejug-site/images/sponsors/logo_telecomnancy.png" title="Telecom Nancy" height="89" width="180"
+                /></a></li>
+    </ul>
+
+    <h1>Partenaires Ressources</h1>
+    <ul>
+        <li><a href="http://www.jetbrains.com/" rel="external"><img
+                src="/lorrainejug-site/images/sponsors/logo_jetbrains.png" title="JetBrains" height="63" width="180"
+                /></a></li>
+    </ul>
+
+    <ul>
+        <li><a href="http://zeroturnaround.com/" rel="external"><img
+                src="/lorrainejug-site/images/sponsors/logo-zeroturnaround.png" title="Zeroturnaround" height="24" width="180"
+                /></a></li>
+    </ul>
+
+    <h1>Partenaires Evenements</h1>
+    <ul>
+        <li><a href="http://www.devoxx.fr/" rel="external"><img
+                src="/lorrainejug-site/images/sponsors/logo_devoxxfr.png" title="Devoxx France 2014" height="141" width="180"
+                /></a></li>
+    </ul>
+
+    <h1>Partenaires Média</h1>
+    <ul>
+        <li><a href="http://www.programmez.com/" rel="external"><img
+                src="/lorrainejug-site/images/sponsors/logo_programmez.png" title="Programmez" height="40" width="180"
+                /></a></li>
+    </ul>
+
+</aside>
+        </div>
+        <footer>
+    <div class="container">
+        <section id="about">
+            <p>Les évènement LorraineJug sont organisées par l’association à but non lucratif LorraineJug.</p>
+
+            <p>Les informations contenues dans ces pages peuvent faire l’objet d’un changement ultérieur. En
+                particulier, la liste des sujets présentés, les dates et horaires, ainsi que le lieu. Nous ne saurions
+                être tenus responsables d’un changement de dernière minute.</p>
+
+            <p>
+                Consultez nos <a href="/lorrainejug-site/status.html">statuts</a> et <a
+                    href="/lorrainejug-site/legal.html">informations légales</a>.
+            </p>
+        </section>
+        <ul class="sociallinks">
+            <!-- Merci à vainsfaktory.com pour les icones (http://vainsfaktory.com/simple-colored-social-icons/) -->
+            <li><a href="https://twitter.com/LorraineJUG" rel="external"><img
+                    src="/lorrainejug-site/images/icones/twitter_icon_47x47.png" title="Twitter" height="47"
+                    width="47"
+                    /></a></li>
+            <li><a href="https://plus.google.com/u/0/115282923534937928206" rel="external"><img
+                    src="/lorrainejug-site/images/icones/googleplus_icon_47x47.png"
+                    title="Google+" height="47" width="47"
+                    /></a></li>
+            <li><a href="http://www.facebook.com/#%21/group.php?gid=109091105783812" rel="external"><img
+                    src="/lorrainejug-site/images/icones/facebook_icon_47x47.png"
+                    title="Facebook" height="47" width="47"
+                    /></a></li>
+            <li><a href="#" rel="external"><img src="/lorrainejug-site/images/icones/github_icon_47x47.png"
+                                               title="Github" height="47" width="47"
+                    /></a></li>
+            <li><a href="http://www.linkedin.com/groups?gid=1369847&sharedKey=3A32713A8B03" rel="external"><img
+                    src="/lorrainejug-site/images/icones/linkedin_icon_47x47.png" title="Linkedin" height="47"
+                    width="47"
+                    /></a></li>
+            <li><a href="http://www.viadeo.com/fr/groups/?containerId=002vyitcuo9fbmq" rel="external"><img
+                    src="/lorrainejug-site/images/icones/viadeo_icon_47x47.png"
+                    title="Viadeo" height="47" width="47"
+                    /></a></li>
+            <li><a href="#" rel="external"><img src="/lorrainejug-site/images/icones/mail_icon_47x47.png"
+                                               title="Mail" height="47" width="47"/></a></li>
+            <li><a href="/lorrainejug-site/feed.xml" rel="internal"><img
+                    src="/lorrainejug-site/images/icones/rss_icon_47x47.png"
+                    title="Mail" height="47" width="47"/></a></li>
+        </ul>
+    </div>
+</footer>
+
+    </body>
+</html>
